@@ -1,65 +1,159 @@
-import Image from "next/image";
+import Link from "next/link";
+import Hero from "@/components/Hero";
+import ProjectCard from "@/components/ProjectCard";
+import ReviewCard from "@/components/ReviewCard";
+import SectionHeading from "@/components/SectionHeading";
+import ServiceCard from "@/components/ServiceCard";
+import {
+  featuredProducts,
+  projects,
+  reviews,
+  services,
+  siteConfig,
+  whyChooseUs,
+} from "@/lib/data";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <>
+      <Hero />
+
+      {/* Why Choose Us */}
+      <section className="bg-brand-gray py-14 sm:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <SectionHeading
+            title="Why Choose Us"
+            subtitle="A trusted local partner for homeowners, contractors, builders, and interior professionals in Udupi."
+            centered
+          />
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {whyChooseUs.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm"
+              >
+                <h3 className="font-heading text-base font-semibold text-brand-blue">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services Preview */}
+      <section className="py-14 sm:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <SectionHeading
+            title="Our Services"
+            subtitle="Everything you need for construction, interiors, and fabrication — under one roof."
+            centered
+          />
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {services.map((service) => (
+              <ServiceCard
+                key={service.id}
+                title={service.title}
+                short={service.short}
+                href="/services"
+              />
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link
+              href="/services"
+              className="inline-block rounded-lg bg-brand-blue px-6 py-3 text-sm font-semibold text-white hover:bg-blue-900"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              View All Services
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Products */}
+      <section className="border-y border-gray-200 bg-white py-14 sm:py-16">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <SectionHeading
+            title="Featured Products"
+            subtitle="Popular materials our customers ask for every day."
+            centered
+          />
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            {featuredProducts.map((product) => (
+              <span
+                key={product}
+                className="rounded-full border border-brand-wood/30 bg-brand-wood/10 px-4 py-2 text-sm font-medium text-brand-wood"
+              >
+                {product}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Preview */}
+      <section className="bg-brand-gray py-14 sm:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <SectionHeading
+            title="Recent Projects"
+            subtitle="A glimpse of the work we support across residential, commercial, and industrial sites."
+            centered
+          />
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.slice(0, 3).map((project) => (
+              <ProjectCard key={project.title} {...project} />
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link
+              href="/projects"
+              className="inline-block rounded-lg border-2 border-brand-blue px-6 py-3 text-sm font-semibold text-brand-blue hover:bg-brand-blue hover:text-white"
             >
-              Learning
-            </a>{" "}
-            center.
+              View All Projects
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-14 sm:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <SectionHeading
+            title="What Our Customers Say"
+            subtitle={`Rated ${siteConfig.googleRating} on Google with ${siteConfig.reviewCount} reviews.`}
+            centered
+          />
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {reviews.map((review) => (
+              <ReviewCard key={review.name} {...review} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Banner */}
+      <section className="bg-brand-blue py-14 text-white sm:py-16">
+        <div className="mx-auto max-w-6xl px-4 text-center sm:px-6">
+          <h2 className="font-heading text-2xl font-bold sm:text-3xl">
+            Need Quality Plywood & Interior Materials?
+          </h2>
+          <p className="mx-auto mt-3 max-w-xl text-base text-blue-100 sm:text-lg">
+            Visit us in Udyavara or get in touch for pricing and availability.
           </p>
+          <div className="mt-6 flex flex-wrap justify-center gap-4">
+            <Link
+              href="/contact"
+              className="rounded-lg bg-brand-orange px-8 py-3 text-base font-semibold text-white hover:bg-orange-600"
+            >
+              Contact Us
+            </Link>
+            <span className="flex items-center rounded-lg border border-white/30 px-6 py-3 text-base font-semibold">
+              {siteConfig.phoneDisplay}
+            </span>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+    </>
   );
 }
