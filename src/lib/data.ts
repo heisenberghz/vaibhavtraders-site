@@ -33,11 +33,11 @@ export const whyChooseUs = [
   },
   {
     title: "Premium Quality Materials",
-    description: "Trusted brands and quality-checked plywood, hardware, and interior materials.",
+    description: "Trusted brands and quality-checked plywood, hardware and interior materials.",
   },
   {
     title: "Competitive Pricing",
-    description: "Fair rates for homeowners, contractors, builders, and interior professionals.",
+    description: "Fair rates for homeowners, contractors, builders and interior professionals.",
   },
   {
     title: "Timely Delivery",
@@ -57,27 +57,27 @@ export const services = [
   {
     id: "plywood",
     title: "Plywood Supply",
-    short: "Commercial, marine, waterproof, and decorative plywood for every need.",
+    short: "Commercial, marine, waterproof and decorative plywood for every need.",
     description:
-      "We supply a wide range of plywood for residential, commercial, and industrial use — including commercial plywood, marine plywood, waterproof boards, and decorative options.",
+      "We supply a wide range of plywood for residential, commercial and industrial use — including commercial plywood, marine plywood, waterproof boards and decorative options.",
     products: ["Commercial Plywood", "Marine Plywood", "Waterproof Plywood", "Decorative Plywood"],
     applications: ["Modular kitchens", "Wardrobes", "Furniture", "Construction"],
   },
   {
     id: "hardware",
     title: "Hardware Supply",
-    short: "Hinges, handles, locks, channels, screws, and fittings.",
+    short: "Hinges, handles, locks, channels, screws and fittings.",
     description:
-      "Complete hardware solutions for interiors and construction — from everyday fittings to premium accessories for kitchens, wardrobes, and office setups.",
+      "Complete hardware solutions for interiors and construction — from everyday fittings to premium accessories for kitchens, wardrobes and office setups.",
     products: ["Hinges", "Handles", "Locks", "Channels", "Screws & Fittings"],
     applications: ["Modular kitchens", "Wardrobes", "Doors & windows", "Office interiors"],
   },
   {
     id: "aluminium",
     title: "Aluminium Fabrication",
-    short: "Windows, doors, partitions, and glass solutions.",
+    short: "Windows, doors, partitions and glass solutions.",
     description:
-      "Custom aluminium fabrication for homes, shops, and offices — including windows, doors, partitions, and glass-related works with neat finishing.",
+      "Custom aluminium fabrication for homes, shops, and offices — including windows, doors, partitions and glass-related works with neat finishing.",
     products: ["Windows", "Doors", "Partitions", "Office works", "Glass solutions"],
     applications: ["Residential", "Commercial shops", "Office spaces", "Renovation projects"],
   },
@@ -93,9 +93,9 @@ export const services = [
   {
     id: "interior",
     title: "Interior Solutions",
-    short: "Modular kitchens, wardrobes, TV units, and office interiors.",
+    short: "Modular kitchens, wardrobes, TV units and office interiors.",
     description:
-      "End-to-end interior material support and works including modular kitchens, wardrobes, TV units, office interiors, and furniture-related requirements.",
+      "End-to-end interior material support and works including modular kitchens, wardrobes, TV units, office interiors and furniture-related requirements.",
     products: ["Modular kitchens", "Wardrobes", "TV units", "Office interiors", "Furniture"],
     applications: ["New homes", "Renovations", "Commercial interiors", "Office fit-outs"],
   },
@@ -113,7 +113,7 @@ export const featuredProducts = [
 export const reviews = [
   {
     name: "Praveen @ Yashaswi",
-    text: "Excellent interior work. The design, finishing, and attention to detail were impressive. Highly satisfied with the outcome.",
+    text: "Excellent interior work. The design, finishing and attention to detail were impressive. Highly satisfied with the outcome.",
     rating: 5,
   },
   {
@@ -184,6 +184,6 @@ export const projects = [
 
 export const timeline = [
   { year: "2002", title: "Founded", description: "Vaibhav Traders started serving customers in Udupi with quality plywood and materials." },
-  { year: "2010", title: "Expanded Services", description: "Added hardware supply, aluminium fabrication, and roofing solutions." },
-  { year: "Today", title: "Trusted Local Partner", description: "A one-stop shop for plywood, hardware, interiors, and fabrication with 23+ years of experience." },
+  { year: "2010", title: "Expanded Services", description: "Added hardware supply, aluminium fabrication and roofing solutions." },
+  { year: "Today", title: "Trusted Local Partner", description: "A one-stop shop for plywood, hardware, interiors and fabrication with 23+ years of experience." },
 ];
