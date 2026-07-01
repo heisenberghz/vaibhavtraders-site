@@ -35,7 +35,9 @@ export default function Footer() {
             <p>{siteConfig.address.line1}</p>
             <p>{siteConfig.address.line2}</p>
             <p>{siteConfig.address.state}</p>
-            <p className="pt-1 font-semibold text-white">{siteConfig.phoneDisplay}</p>
+            <a href={`tel:${siteConfig.phone}`} className="pt-1 font-semibold text-white hover:text-brand-orange transition-colors">
+              {siteConfig.phoneDisplay}
+            </a>
             <p>{siteConfig.hours}</p>
           </address>
         </div>
