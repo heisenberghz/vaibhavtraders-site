@@ -9,7 +9,6 @@ import {
   projects,
   reviews,
   services,
-  siteConfig,
   whyChooseUs,
 } from "@/lib/data";
 
@@ -132,28 +131,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Banner */}
-      <section className="bg-brand-blue py-14 text-white sm:py-16">
-        <div className="mx-auto max-w-6xl px-4 text-center sm:px-6">
-          <h2 className="font-heading text-2xl font-bold sm:text-3xl">
-            Need Quality Plywood & Interior Materials?
-          </h2>
-          <p className="mx-auto mt-3 max-w-xl text-base text-blue-100 sm:text-lg">
-            Visit us in Udyavara or get in touch for pricing and availability.
-          </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-4">
-            <Link
-              href="/contact"
-              className="rounded-lg bg-brand-orange px-8 py-3 text-base font-semibold text-white hover:bg-orange-600"
-            >
-              Contact Us
-            </Link>
-            <span className="flex items-center rounded-lg border border-white/30 px-6 py-3 text-base font-semibold">
-              {siteConfig.phoneDisplay}
-            </span>
-          </div>
-        </div>
-      </section>
+
     </>
   );
 }
