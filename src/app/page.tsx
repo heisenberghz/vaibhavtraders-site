@@ -9,6 +9,7 @@ import {
   projects,
   reviews,
   services,
+  siteConfig,
   whyChooseUs,
 } from "@/lib/data";
 
