@@ -11,7 +11,7 @@ export const siteConfig = {
     state: "Karnataka 574118, India",
     full: "Vaibhav Traders, 1/2, Guddeyangadi, Udyavara, Udupi, Karnataka 574118, India",
   },
-  hours: "Open: Morning to Evening",
+  hours: "Mon – Sat: 9:00 AM – 7:00 PM",
   experience: "23+",
   googleRating: 5.0,
   reviewCount: 7,
