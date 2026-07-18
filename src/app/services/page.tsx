@@ -27,45 +27,45 @@ export default function ServicesPage() {
             centered
           />
 
-          <div className="mt-12 space-y-10">
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
             {services.map((service, index) => (
               <article
                 key={service.id}
                 id={service.id}
-                className="scroll-mt-24 rounded-xl border border-gray-200 bg-white p-6 shadow-sm sm:p-8"
+                className="scroll-mt-24 rounded-xl border border-gray-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-blue/25 hover:shadow-md sm:p-6"
               >
-                <div className="flex items-start gap-4">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-orange font-heading text-lg font-bold text-white">
+                <div className="flex items-start gap-3">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-orange font-heading text-base font-bold text-white">
                     {index + 1}
                   </span>
                   <div className="flex-1">
-                    <h2 className="font-heading text-xl font-bold text-brand-blue sm:text-2xl">
+                    <h2 className="font-heading text-lg font-bold text-brand-blue sm:text-xl">
                       {service.title}
                     </h2>
-                    <p className="mt-3 text-base leading-relaxed text-gray-700">
+                    <p className="mt-2 text-sm leading-relaxed text-gray-600">
                       {service.description}
                     </p>
 
-                    <div className="mt-6 grid gap-6 sm:grid-cols-2">
+                    <div className="mt-5 grid gap-5 sm:grid-cols-2">
                       <div>
-                        <h3 className="text-sm font-semibold uppercase tracking-wide text-brand-wood">
-                          Products / Services
+                        <h3 className="text-xs font-bold uppercase tracking-wider text-brand-wood">
+                          Products & Materials
                         </h3>
-                        <ul className="mt-2 space-y-1">
+                        <ul className="mt-1.5 space-y-1">
                           {service.products.map((item) => (
-                            <li key={item} className="text-sm text-gray-600">
+                            <li key={item} className="text-xs text-gray-500">
                               • {item}
                             </li>
                           ))}
                         </ul>
                       </div>
                       <div>
-                        <h3 className="text-sm font-semibold uppercase tracking-wide text-brand-wood">
-                          Applications
+                        <h3 className="text-xs font-bold uppercase tracking-wider text-brand-wood">
+                          Common Applications
                         </h3>
-                        <ul className="mt-2 space-y-1">
+                        <ul className="mt-1.5 space-y-1">
                           {service.applications.map((item) => (
-                            <li key={item} className="text-sm text-gray-600">
+                            <li key={item} className="text-xs text-gray-500">
                               • {item}
                             </li>
                           ))}
