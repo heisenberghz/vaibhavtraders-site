@@ -32,7 +32,7 @@ export default function ServicesPage() {
               <article
                 key={service.id}
                 id={service.id}
-                className="scroll-mt-24 rounded-xl border border-gray-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-blue/25 hover:shadow-md sm:p-6"
+                className="scroll-mt-24 rounded-xl border border-gray-200 border-t-4 border-t-brand-blue bg-gradient-to-br from-white to-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-blue/25 hover:from-blue-50/30 hover:to-gray-50/30 hover:shadow-md sm:p-6"
               >
                 <div className="flex items-start gap-3">
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-orange font-heading text-base font-bold text-white">
