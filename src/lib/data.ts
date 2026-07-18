@@ -29,27 +29,33 @@ export const navLinks = [
 export const whyChooseUs = [
   {
     title: "23+ Years Experience",
-    description: "Serving Udupi and nearby areas with reliable supply and service since 2002.",
+    icon: "award",
+    description: "Serving Udupi with a proven track record in material supply and contract execution.",
   },
   {
-    title: "Premium Quality Materials",
-    description: "Trusted brands and quality-checked plywood, hardware and interior materials.",
+    title: "End-to-End Execution",
+    icon: "tools",
+    description: "Complete turnkey design, customized woodwork fabrication and on-site assembly by expert craftsmen.",
   },
   {
-    title: "Competitive Pricing",
-    description: "Fair rates for homeowners, contractors, builders and interior professionals.",
+    title: "Premium Materials",
+    icon: "shield",
+    description: "Direct access to top-grade plywood and hardware ensures superior longevity and a perfect finish.",
   },
   {
-    title: "Timely Delivery",
-    description: "Professional approach with on-time delivery for projects of every size.",
+    title: "Transparent Pricing",
+    icon: "price",
+    description: "Sourcing materials directly cuts middleman margins, offering unbeatable value for premium interiors.",
   },
   {
-    title: "Professional Service",
-    description: "Helpful guidance from selection to delivery for a smooth buying experience.",
+    title: "On-Time Handover",
+    icon: "clock",
+    description: "Highly systematic workflow from initial material selection to final site installation and cleanup.",
   },
   {
     title: "Trusted by Customers",
-    description: "Rated 5.0 on Google with reviews from happy homeowners and contractors.",
+    icon: "star",
+    description: "Highly recommended by local homeowners and builders for outstanding quality and service support.",
   },
 ];
 
