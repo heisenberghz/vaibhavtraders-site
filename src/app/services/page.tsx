@@ -14,7 +14,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <h1 className="font-heading text-3xl font-bold sm:text-4xl">Our Services</h1>
           <p className="mt-3 max-w-2xl text-lg text-blue-100">
-            Complete solutions for construction, interiors, and fabrication — all from one trusted supplier.
+            Complete solutions for construction, custom interiors and fabrication — from top-tier material supply to professional design and execution.
           </p>
         </div>
       </section>
@@ -23,7 +23,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeading
             title="What We Offer"
-            subtitle="Whether you're a homeowner, contractor, builder, or interior designer — we have you covered."
+            subtitle="Whether you are sourcing premium materials or looking for professional execution of your interior and fabrication works — we have you covered."
             centered
           />
 

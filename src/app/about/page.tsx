@@ -26,13 +26,13 @@ export default function AboutPage() {
               <SectionHeading title="Our Story" />
               <p className="mt-6 text-base leading-relaxed text-gray-700">
                 {siteConfig.name} has been serving customers across Udupi for more than 23 years,
-                delivering premium plywood, hardware, aluminium fabrication, and roofing solutions
-                with a commitment to quality and customer satisfaction.
+                delivering premium plywood, hardware, custom aluminium fabrication, and roofing solutions,
+                alongside complete end-to-end interior design and execution works.
               </p>
               <p className="mt-4 text-base leading-relaxed text-gray-700">
-                From homeowners planning a modular kitchen to contractors sourcing bulk plywood,
-                we provide the materials, guidance, and reliable service that keep projects moving
-                on time.
+                Whether you are a homeowner seeking to design and install a custom modular kitchen and wardrobes,
+                or a builder looking for a reliable material supplier, we deliver both top-grade materials
+                and the skilled craftsmanship required to bring your vision to life.
               </p>
             </div>
 

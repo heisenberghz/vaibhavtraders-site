@@ -29,7 +29,11 @@ export const metadata: Metadata = {
     "Hardware Store Udupi",
     "Aluminium Fabrication Udupi",
     "Roofing Contractor Udupi",
-    "Interior Materials Udupi",
+    "Interior Solutions Udupi",
+    "Interior Designers Udupi",
+    "Modular Kitchen Contractor Udupi",
+    "Custom Wardrobes Udupi",
+    "Complete Interior Works Udupi",
   ],
 };
 

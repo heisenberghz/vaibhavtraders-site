@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Vaibhav Traders",
-  tagline: "Trusted Plywood & Interior Solutions in Udupi Since 2002",
+  tagline: "Trusted Plywood Dealers & Interior Solutions in Udupi",
   description:
-    "Premium plywood, hardware, aluminium fabrication, roofing, and interior solutions in Udupi. Over 23 years of trusted service.",
+    "Premium plywood, hardware, aluminium fabrication, roofing, and complete interior design & execution solutions in Udupi. Over 23 years of trusted service.",
   phone: "9342501605",
   phoneDisplay: "+91 93425 01605",
   address: {
@@ -95,9 +95,9 @@ export const services = [
     title: "Interior Solutions",
     short: "Modular kitchens, wardrobes, TV units and office interiors.",
     description:
-      "End-to-end interior material support and works including modular kitchens, wardrobes, TV units, office interiors and furniture-related requirements.",
-    products: ["Modular kitchens", "Wardrobes", "TV units", "Office interiors", "Furniture"],
-    applications: ["New homes", "Renovations", "Commercial interiors", "Office fit-outs"],
+      "Complete design, execution, and installation of custom interiors — including modular kitchens, wardrobes, TV units, office spaces, and custom furniture crafted to perfection.",
+    products: ["Modular Kitchens", "Wardrobes & Lofts", "TV Cabinets", "Office Partitions & Desks", "Custom Furniture"],
+    applications: ["New home interiors", "Renovations & remodeling", "Commercial interior execution", "Office fit-outs"],
   },
 ];
 
@@ -145,39 +145,39 @@ export const reviews = [
 
 export const projects = [
   {
-    title: "Residential Interior Supply",
+    title: "Residential Interior Project",
     category: "Residential",
-    description: "Plywood and hardware supply for a complete home interior project in Udupi.",
+    description: "Complete design, supply and execution of home interiors in Udupi.",
     image: "/projects/residential.jpg",
   },
   {
-    title: "Modular Kitchen Materials",
+    title: "Custom Modular Kitchen",
     category: "Interior",
-    description: "Premium plywood, laminates, and fittings supplied for a modular kitchen setup.",
+    description: "Premium modular kitchen designed, fabricated and installed with quality fittings.",
     image: "/projects/kitchen.jpg",
   },
   {
     title: "Commercial Shop Front",
     category: "Commercial",
-    description: "Aluminium fabrication and roofing materials for a commercial storefront.",
+    description: "Aluminium fabrication and roofing installation for a modern commercial storefront.",
     image: "/projects/commercial.jpg",
   },
   {
-    title: "Office Partition Works",
+    title: "Office Partition & Interiors",
     category: "Office",
-    description: "Aluminium partitions and interior materials for an office renovation.",
+    description: "Custom aluminium partitions and complete interior fit-out for a corporate office.",
     image: "/projects/office.jpg",
   },
   {
     title: "Industrial Roofing Project",
     category: "Roofing",
-    description: "Roofing sheets and installation support for an industrial unit near Udupi.",
+    description: "Roofing sheets supply and professional installation for an industrial unit near Udupi.",
     image: "/projects/roofing.jpg",
   },
   {
-    title: "Wardrobe & Furniture Supply",
+    title: "Wardrobe & Custom Furniture",
     category: "Interior",
-    description: "Decorative plywood and hardware for custom wardrobes and furniture.",
+    description: "Design and execution of custom wardrobes, lofts and bespoke wooden furniture.",
     image: "/projects/wardrobe.jpg",
   },
 ];
@@ -185,5 +185,5 @@ export const projects = [
 export const timeline = [
   { year: "2002", title: "Founded", description: "Vaibhav Traders started serving customers in Udupi with quality plywood and materials." },
   { year: "2010", title: "Expanded Services", description: "Added hardware supply, aluminium fabrication and roofing solutions." },
-  { year: "Today", title: "Trusted Local Partner", description: "A one-stop shop for plywood, hardware, interiors and fabrication with 23+ years of experience." },
+  { year: "Today", title: "Trusted Partner", description: "A leading supplier and contractor for plywood, hardware, custom fabrication, and complete interior works." },
 ];
