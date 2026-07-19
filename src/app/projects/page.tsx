@@ -8,8 +8,6 @@ export const metadata: Metadata = {
   description: `View residential, commercial, office, roofing and interior projects supported by ${siteConfig.name} in Udupi.`,
 };
 
-const categories = ["All", "Residential", "Commercial", "Office", "Roofing", "Interior"];
-
 export default function ProjectsPage() {
   return (
     <>
@@ -30,29 +28,11 @@ export default function ProjectsPage() {
             centered
           />
 
-          <div className="mt-6 flex flex-wrap justify-center gap-2">
-            {categories.map((cat) => (
-              <span
-                key={cat}
-                className={`rounded-full px-4 py-1.5 text-sm font-medium ${cat === "All"
-                  ? "bg-brand-blue text-white"
-                  : "bg-gray-100 text-gray-600"
-                  }`}
-              >
-                {cat}
-              </span>
-            ))}
-          </div>
-
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {projects.map((project) => (
               <ProjectCard key={project.title} {...project} />
             ))}
           </div>
-
-          <p className="mt-10 text-center text-sm text-gray-500">
-
-          </p>
         </div>
       </section>
     </>
