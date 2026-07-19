@@ -151,40 +151,22 @@ export const reviews = [
 
 export const projects = [
   {
-    title: "Residential Interior Project",
-    category: "Residential",
-    description: "Complete design, supply and execution of home interiors in Udupi.",
-    image: "/projects/residential.jpg",
-  },
-  {
-    title: "Custom Modular Kitchen",
+    title: "Interior Work 1",
     category: "Interior",
-    description: "Premium modular kitchen designed, fabricated and installed with quality fittings.",
-    image: "/projects/kitchen.jpg",
+    description: "",
+    image: "/projects/project1.jpg",
   },
   {
-    title: "Commercial Shop Front",
-    category: "Commercial",
-    description: "Aluminium fabrication and roofing installation for a modern commercial storefront.",
-    image: "/projects/commercial.jpg",
-  },
-  {
-    title: "Office Partition & Interiors",
-    category: "Office",
-    description: "Custom aluminium partitions and complete interior fit-out for a corporate office.",
-    image: "/projects/office.jpg",
-  },
-  {
-    title: "Industrial Roofing Project",
-    category: "Roofing",
-    description: "Roofing sheets supply and professional installation for an industrial unit near Udupi.",
-    image: "/projects/roofing.jpg",
-  },
-  {
-    title: "Wardrobe & Custom Furniture",
+    title: "Interior Work 2",
     category: "Interior",
-    description: "Design and execution of custom wardrobes, lofts and bespoke wooden furniture.",
-    image: "/projects/wardrobe.jpg",
+    description: "",
+    image: "/projects/project2.jpg",
+  },
+  {
+    title: "Interior Work 3",
+    category: "Interior",
+    description: "",
+    image: "/projects/project3.jpg",
   },
 ];
 

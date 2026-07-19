@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: `View residential, commercial, office, roofing, and interior projects supported by ${siteConfig.name} in Udupi.`,
+  description: `View residential, commercial, office, roofing and interior projects supported by ${siteConfig.name} in Udupi.`,
 };
 
 const categories = ["All", "Residential", "Commercial", "Office", "Roofing", "Interior"];
@@ -17,7 +17,7 @@ export default function ProjectsPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <h1 className="font-heading text-3xl font-bold sm:text-4xl">Projects Gallery</h1>
           <p className="mt-3 max-w-2xl text-lg text-blue-100">
-            A selection of residential, commercial, and industrial work we&apos;ve supported across Udupi.
+            A selection of custom interior works and projects we have executed in Udupi.
           </p>
         </div>
       </section>
@@ -26,7 +26,7 @@ export default function ProjectsPage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeading
             title="Our Work"
-            subtitle="Project photos will be added soon. Contact us to see more examples of our completed work."
+            subtitle="Browse photos of our completed interior designs, custom woodwork, and local installations."
             centered
           />
 
@@ -34,11 +34,10 @@ export default function ProjectsPage() {
             {categories.map((cat) => (
               <span
                 key={cat}
-                className={`rounded-full px-4 py-1.5 text-sm font-medium ${
-                  cat === "All"
-                    ? "bg-brand-blue text-white"
-                    : "bg-gray-100 text-gray-600"
-                }`}
+                className={`rounded-full px-4 py-1.5 text-sm font-medium ${cat === "All"
+                  ? "bg-brand-blue text-white"
+                  : "bg-gray-100 text-gray-600"
+                  }`}
               >
                 {cat}
               </span>
@@ -52,7 +51,7 @@ export default function ProjectsPage() {
           </div>
 
           <p className="mt-10 text-center text-sm text-gray-500">
-            Have photos of your completed project with us? We&apos;d love to feature them here.
+
           </p>
         </div>
       </section>
