@@ -3,13 +3,17 @@ import { siteConfig } from "@/lib/data";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-brand-blue text-white">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-brand-orange blur-3xl" />
-        <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-brand-wood blur-3xl" />
+    <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,#2345a5_0%,#142862_50%,#0a1430_100%)] text-white">
+      {/* Faint subtle texture/blur circles */}
+      <div className="absolute inset-0 opacity-25">
+        <div className="absolute -right-20 -top-20 h-80 w-80 rounded-full bg-brand-orange/30 blur-3xl" />
+        <div className="absolute -bottom-20 -left-20 h-80 w-80 rounded-full bg-brand-wood/30 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-6xl px-4 pt-28 pb-16 sm:px-6 sm:pt-36 sm:pb-24">
+      {/* Bottom transition gradient to blend seamlessly into the next section */}
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0a1430] to-transparent pointer-events-none" />
+
+      <div className="relative z-10 mx-auto max-w-6xl px-4 pt-28 pb-16 sm:px-6 sm:pt-36 sm:pb-24">
         <div className="max-w-3xl">
           <p className="mb-3 inline-block rounded-full bg-white/10 px-4 py-1 text-sm font-medium text-brand-orange">
             Est. {siteConfig.founded} · Udupi, Karnataka
