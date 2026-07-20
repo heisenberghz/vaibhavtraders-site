@@ -3,7 +3,7 @@ import { navLinks, siteConfig } from "@/lib/data";
 
 export default function Footer() {
   return (
-    <footer className="mt-auto border-t border-gray-200 bg-brand-blue text-white">
+    <footer className="mt-auto bg-[linear-gradient(to_right,#142862_0%,#0a1430_100%)] text-white">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-3">
         <div>
           <h3 className="font-heading text-lg font-bold">{siteConfig.name}</h3>
