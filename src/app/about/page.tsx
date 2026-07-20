@@ -16,7 +16,7 @@ export default function AboutPage() {
       >
         <div className="absolute inset-0 bg-brand-blue/80 mix-blend-multiply z-0" />
         <div className="absolute inset-0 bg-brand-blue/40 z-0" />
-        <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-white/30 to-transparent z-0 pointer-events-none" />
+
         <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6">
           <h1 className="font-heading text-3xl font-bold sm:text-4xl">About Us</h1>
           <p className="mt-3 max-w-2xl text-lg text-blue-100">
