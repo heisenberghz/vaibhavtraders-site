@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: `View residential, commercial, office, roofing and interior projects supported by ${siteConfig.name} in Udupi.`,
+  description: `View residential, commercial, office and interior projects supported by ${siteConfig.name} in Udupi.`,
 };
 
 export default function ProjectsPage() {

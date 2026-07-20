@@ -26,7 +26,7 @@ export default function AboutPage() {
               <SectionHeading title="Our Story" />
               <p className="mt-6 text-base leading-relaxed text-gray-700">
                 {siteConfig.name} has been serving customers across Udupi for more than 23 years,
-                delivering premium plywood, hardware, custom aluminium fabrication, and roofing solutions,
+                delivering premium plywood, hardware and custom aluminium fabrication solutions,
                 alongside complete end-to-end interior design and execution works.
               </p>
               <p className="mt-4 text-base leading-relaxed text-gray-700">
@@ -77,8 +77,8 @@ export default function AboutPage() {
             <div className="rounded-xl bg-white p-6 shadow-sm">
               <h3 className="font-heading text-lg font-semibold text-brand-blue">Our Vision</h3>
               <p className="mt-3 text-sm leading-relaxed text-gray-600">
-                To be Udupi&apos;s most trusted one-stop destination for plywood, hardware,
-                fabrication, roofing, and interior solutions.
+                To be Udupi&apos;s most trusted destination for plywood, hardware,
+                custom fabrication and interior solutions.
               </p>
             </div>
             <div className="rounded-xl bg-white p-6 shadow-sm">

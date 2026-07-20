@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Vaibhav Traders",
   tagline: "Trusted Plywood Dealers & Interior Solutions in Udupi",
   description:
-    "Premium plywood, hardware, aluminium fabrication, roofing, and complete interior design & execution solutions in Udupi. Over 23 years of trusted service.",
+    "Premium plywood, hardware, aluminium fabrication, and complete interior design & execution solutions in Udupi. Over 23 years of trusted service.",
   phone: "9342501605",
   phoneDisplay: "+91 93425 01605",
   address: {
@@ -87,15 +87,7 @@ export const services = [
     products: ["Windows", "Doors", "Partitions", "Office works", "Glass solutions"],
     applications: ["Residential", "Commercial shops", "Office spaces", "Renovation projects"],
   },
-  {
-    id: "roofing",
-    title: "Roof Works",
-    short: "Roofing sheets and installation for homes and industries.",
-    description:
-      "Roofing materials and installation support for residential and industrial projects, with dependable supply and practical guidance.",
-    products: ["Roofing sheets", "Installation support", "Industrial roofing", "Residential roofing"],
-    applications: ["Homes", "Shops", "Warehouses", "Industrial sheds"],
-  },
+
   {
     id: "interior",
     title: "Interior Solutions",
@@ -172,6 +164,6 @@ export const projects = [
 
 export const timeline = [
   { year: "2002", title: "Founded", description: "Vaibhav Traders started serving customers in Udupi with quality plywood and materials." },
-  { year: "2010", title: "Expanded Services", description: "Added hardware supply, aluminium fabrication and roofing solutions." },
+  { year: "2010", title: "Expanded Services", description: "Added hardware supply and aluminium fabrication solutions." },
   { year: "Today", title: "Trusted Partner", description: "A leading supplier and contractor for plywood, hardware, custom fabrication, and complete interior works." },
 ];

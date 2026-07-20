@@ -96,7 +96,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeading
             title="Our Services"
-            subtitle="Everything you need for construction, interiors, and fabrication — under one roof."
+            subtitle="Everything you need for home interiors and custom fabrication — all in one place."
             centered
           />
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

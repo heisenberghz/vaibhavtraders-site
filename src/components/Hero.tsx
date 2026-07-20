@@ -18,7 +18,7 @@ export default function Hero() {
             {siteConfig.tagline}
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-blue-100 sm:text-xl">
-            Premium Plywood & Hardware · Custom Interior Works · Aluminium Fabrication & Roofing
+            Premium Plywood & Hardware · Custom Interior Works · Aluminium Fabrication
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">

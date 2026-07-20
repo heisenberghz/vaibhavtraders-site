@@ -28,7 +28,6 @@ export const metadata: Metadata = {
     "Marine Plywood Udupi",
     "Hardware Store Udupi",
     "Aluminium Fabrication Udupi",
-    "Roofing Contractor Udupi",
     "Interior Solutions Udupi",
     "Interior Designers Udupi",
     "Modular Kitchen Contractor Udupi",

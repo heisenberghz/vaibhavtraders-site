@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Services",
-  description: `Plywood supply, hardware, aluminium fabrication, roofing, and interior solutions in Udupi — ${siteConfig.name}.`,
+  description: `Plywood supply, hardware, aluminium fabrication and interior solutions in Udupi — ${siteConfig.name}.`,
 };
 
 export default function ServicesPage() {

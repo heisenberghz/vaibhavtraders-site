@@ -8,7 +8,7 @@ export default function Footer() {
         <div>
           <h3 className="font-heading text-lg font-bold">{siteConfig.name}</h3>
           <p className="mt-2 text-sm leading-relaxed text-blue-100">
-            Trusted plywood, hardware, aluminium fabrication, roofing and interior solutions in Udupi since {siteConfig.founded}.
+            Trusted plywood, hardware, aluminium fabrication and interior solutions in Udupi since {siteConfig.founded}.
           </p>
         </div>
 
