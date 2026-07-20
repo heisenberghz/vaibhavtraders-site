@@ -142,24 +142,23 @@ export const reviews = [
 ];
 
 export const projects = [
-  {
-    title: "Interior Work 1",
-    category: "Interior",
-    description: "",
-    image: "/projects/project1.jpg",
-  },
-  {
-    title: "Interior Work 2",
-    category: "Interior",
-    description: "",
-    image: "/projects/project2.jpg",
-  },
-  {
-    title: "Interior Work 3",
-    category: "Interior",
-    description: "",
-    image: "/projects/project3.jpg",
-  },
+  { title: "Project 1", category: "Interior", description: "", image: "/projects/project1.jpg" },
+  { title: "Project 2", category: "Interior", description: "", image: "/projects/project2.jpg" },
+  { title: "Project 3", category: "Interior", description: "", image: "/projects/project3.jpg" },
+  { title: "Project 4", category: "Interior", description: "", image: "/projects/project4.jpg" },
+  { title: "Project 5", category: "Interior", description: "", image: "/projects/project5.jpg" },
+  { title: "Project 6", category: "Interior", description: "", image: "/projects/project6.jpg" },
+  { title: "Project 7", category: "Interior", description: "", image: "/projects/project7.jpg" },
+  { title: "Project 9", category: "Interior", description: "", image: "/projects/project9.jpg" },
+  { title: "Project 10", category: "Interior", description: "", image: "/projects/project10.jpg" },
+  { title: "Project 12", category: "Interior", description: "", image: "/projects/project12.jpg" },
+  { title: "Project 13", category: "Interior", description: "", image: "/projects/project13.jpg" },
+  { title: "Project 14", category: "Interior", description: "", image: "/projects/project14.jpg" },
+  { title: "Project 15", category: "Interior", description: "", image: "/projects/project15.jpg" },
+  { title: "Project 16", category: "Interior", description: "", image: "/projects/project16.jpg" },
+  { title: "Project 18", category: "Interior", description: "", image: "/projects/project18.jpg" },
+  { title: "Project 19", category: "Interior", description: "", image: "/projects/project19.jpg" },
+  { title: "Project 20", category: "Interior", description: "", image: "/projects/project20.jpg" },
 ];
 
 export const timeline = [
