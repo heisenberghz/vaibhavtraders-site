@@ -11,11 +11,12 @@ export default function ServicesPage() {
   return (
     <>
       <section
-        className="relative bg-cover bg-center pt-24 pb-16 text-white sm:pt-36 sm:pb-20"
+        className="relative bg-cover bg-center pt-32 pb-20 text-white sm:pt-40 sm:pb-24"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80')" }}
       >
-        <div className="absolute inset-0 bg-brand-blue/80 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-brand-blue/45" />
+        <div className="absolute inset-0 bg-brand-blue/80 mix-blend-multiply z-0" />
+        <div className="absolute inset-0 bg-brand-blue/40 z-0" />
+        <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-white/30 to-transparent z-0 pointer-events-none" />
         <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6">
           <h1 className="font-heading text-3xl font-bold sm:text-4xl">Our Services</h1>
           <p className="mt-3 max-w-2xl text-lg text-blue-100">

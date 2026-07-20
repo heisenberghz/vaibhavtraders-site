@@ -90,11 +90,13 @@ export default function Home() {
 
       {/* Why Choose Us */}
       <section
-        className="relative py-14 sm:py-20 bg-cover bg-center"
+        className="relative py-16 sm:py-24 bg-cover bg-center overflow-hidden"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80')" }}
       >
-        <div className="absolute inset-0 bg-brand-blue/80 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-brand-blue/40" />
+        <div className="absolute inset-0 bg-brand-blue/80 mix-blend-multiply z-0" />
+        <div className="absolute inset-0 bg-brand-blue/40 z-0" />
+        <div className="absolute top-0 left-0 right-0 h-12 bg-gradient-to-b from-brand-blue/40 to-transparent z-0 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-white/30 to-transparent z-0 pointer-events-none" />
         <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeading
             title="Why Choose Us"
@@ -131,7 +133,7 @@ export default function Home() {
             subtitle="Everything you need for home interiors and custom fabrication — all in one place."
             centered
           />
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {services.map((service) => (
               <ServiceCard
                 key={service.id}
@@ -154,11 +156,13 @@ export default function Home() {
 
       {/* Featured Products */}
       <section
-        className="relative py-14 sm:py-16 bg-cover bg-center"
+        className="relative py-16 sm:py-20 bg-cover bg-center overflow-hidden"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&q=80')" }}
       >
-        <div className="absolute inset-0 bg-brand-blue/80 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-brand-blue/40" />
+        <div className="absolute inset-0 bg-brand-blue/80 mix-blend-multiply z-0" />
+        <div className="absolute inset-0 bg-brand-blue/40 z-0" />
+        <div className="absolute top-0 left-0 right-0 h-12 bg-gradient-to-b from-white/30 to-transparent z-0 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brand-gray/30 to-transparent z-0 pointer-events-none" />
         <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeading
             title="Featured Products"
@@ -205,11 +209,13 @@ export default function Home() {
 
       {/* Testimonials */}
       <section
-        className="relative py-14 sm:py-20 bg-cover bg-center"
+        className="relative py-16 sm:py-24 bg-cover bg-center overflow-hidden"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&q=80')" }}
       >
-        <div className="absolute inset-0 bg-brand-blue/80 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-brand-blue/40" />
+        <div className="absolute inset-0 bg-brand-blue/80 mix-blend-multiply z-0" />
+        <div className="absolute inset-0 bg-brand-blue/40 z-0" />
+        <div className="absolute top-0 left-0 right-0 h-12 bg-gradient-to-b from-brand-gray/30 to-transparent z-0 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brand-blue/40 to-transparent z-0 pointer-events-none" />
         <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6">
           <SectionHeading
             title="What Our Customers Say"
