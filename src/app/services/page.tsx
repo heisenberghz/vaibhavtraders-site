@@ -10,8 +10,13 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <section className="bg-brand-blue pt-24 pb-12 text-white sm:pt-32 sm:pb-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section
+        className="relative bg-cover bg-center pt-24 pb-16 text-white sm:pt-36 sm:pb-20"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80')" }}
+      >
+        <div className="absolute inset-0 bg-brand-blue/80 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-brand-blue/45" />
+        <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6">
           <h1 className="font-heading text-3xl font-bold sm:text-4xl">Our Services</h1>
           <p className="mt-3 max-w-2xl text-lg text-blue-100">
             Complete solutions for construction, custom interiors and fabrication — from top-tier material supply to professional design and execution.
