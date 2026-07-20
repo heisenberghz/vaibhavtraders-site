@@ -154,34 +154,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Products */}
-      <section
-        className="relative py-16 sm:py-20 bg-cover bg-center overflow-hidden"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&q=80')" }}
-      >
-        <div className="absolute inset-0 bg-brand-blue/80 mix-blend-multiply z-0" />
-        <div className="absolute inset-0 bg-brand-blue/40 z-0" />
-        <div className="absolute top-0 left-0 right-0 h-12 bg-gradient-to-b from-white/30 to-transparent z-0 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-brand-gray/30 to-transparent z-0 pointer-events-none" />
-        <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6">
-          <SectionHeading
-            title="Featured Products"
-            subtitle="Popular materials our customers ask for every day."
-            centered
-            light
-          />
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            {featuredProducts.map((product) => (
-              <span
-                key={product}
-                className="rounded-full border border-white/30 bg-white/15 px-4 py-2 text-sm font-semibold text-white backdrop-blur-sm"
-              >
-                {product}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* Projects Preview */}
       <section className="bg-brand-gray py-14 sm:py-20">
