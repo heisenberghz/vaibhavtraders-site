@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useState, useRef } from "react";
 import Hero from "@/components/Hero";
 import ProjectCard from "@/components/ProjectCard";
 import ReviewCard from "@/components/ReviewCard";
@@ -58,6 +61,29 @@ function getIcon(iconName: string) {
 }
 
 export default function Home() {
+  const [activeSlide, setActiveSlide] = useState(0);
+  const sliderRef = useRef<HTMLDivElement>(null);
+
+  const handleScroll = () => {
+    if (!sliderRef.current) return;
+    const width = sliderRef.current.clientWidth;
+    const scrollLeft = sliderRef.current.scrollLeft;
+    const index = Math.round(scrollLeft / width);
+    if (index !== activeSlide) {
+      setActiveSlide(index);
+    }
+  };
+
+  const scrollToSlide = (index: number) => {
+    if (!sliderRef.current) return;
+    const width = sliderRef.current.clientWidth;
+    sliderRef.current.scrollTo({
+      left: width * index,
+      behavior: "smooth",
+    });
+    setActiveSlide(index);
+  };
+
   return (
     <>
       <Hero />
@@ -173,10 +199,39 @@ export default function Home() {
             subtitle={`Rated ${siteConfig.googleRating} on Google with ${siteConfig.reviewCount} reviews.`}
             centered
           />
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {reviews.map((review) => (
-              <ReviewCard key={review.name} {...review} />
-            ))}
+          
+          <div className="relative mt-10">
+            {/* Horizontal Slider (Mobile) & Grid (Desktop) */}
+            <div
+              ref={sliderRef}
+              onScroll={handleScroll}
+              className="flex gap-4 overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] pb-4 md:grid md:grid-cols-3 md:gap-5 md:overflow-visible md:snap-none"
+            >
+              {reviews.map((review) => (
+                <div
+                  key={review.name}
+                  className="min-w-full snap-center md:min-w-0 md:snap-align-none"
+                >
+                  <ReviewCard {...review} />
+                </div>
+              ))}
+            </div>
+
+            {/* Bullet Pagination Indicators (Mobile Only) */}
+            <div className="mt-4 flex justify-center gap-2 md:hidden">
+              {reviews.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => scrollToSlide(idx)}
+                  className={`h-2 w-2 rounded-full transition-all duration-300 ${
+                    idx === activeSlide
+                      ? "bg-brand-blue w-6"
+                      : "bg-gray-300 hover:bg-gray-400"
+                  }`}
+                  aria-label={`Go to slide ${idx + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>
