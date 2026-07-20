@@ -28,16 +28,22 @@ export default function Header() {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ${
-      scrolled
-        ? "border-blue-900/10 bg-brand-blue/90 backdrop-blur-md shadow-md"
+      scrolled || open
+        ? scrolled
+          ? "border-gray-200 bg-white/90 backdrop-blur-md shadow-md"
+          : "border-blue-900/10 bg-brand-blue shadow-md"
         : "border-transparent bg-transparent shadow-none"
     }`}>
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
         <Link href="/" className="group flex flex-col">
-          <span className="font-heading text-lg font-bold tracking-tight text-white sm:text-xl">
+          <span className={`font-heading text-lg font-bold tracking-tight sm:text-xl transition-colors duration-300 ${
+            scrolled ? "text-brand-blue" : "text-white"
+          }`}>
             {siteConfig.name}
           </span>
-          <span className="hidden text-xs text-blue-100 sm:block">
+          <span className={`hidden text-xs sm:block transition-colors duration-300 ${
+            scrolled ? "text-gray-500" : "text-blue-100"
+          }`}>
             Plywood & Interior Solutions · Udupi
           </span>
         </Link>
@@ -49,10 +55,15 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${active
-                  ? "bg-white/15 text-white"
-                  : "text-blue-100 hover:bg-white/10 hover:text-white"
-                  }`}
+                className={`rounded-md px-3 py-2 text-sm font-medium transition-all duration-300 ${
+                  active
+                    ? scrolled
+                      ? "bg-brand-blue text-white"
+                      : "bg-white/15 text-white"
+                    : scrolled
+                      ? "text-gray-600 hover:bg-gray-100 hover:text-brand-blue"
+                      : "text-blue-100 hover:bg-white/10 hover:text-white"
+                }`}
               >
                 {link.label}
               </Link>
@@ -71,7 +82,9 @@ export default function Header() {
 
         <button
           type="button"
-          className="rounded-md p-2 text-white md:hidden"
+          className={`rounded-md p-2 transition-colors duration-300 md:hidden ${
+            scrolled ? "text-brand-blue" : "text-white"
+          }`}
           aria-label="Toggle menu"
           onClick={() => setOpen(!open)}
         >
@@ -86,19 +99,29 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="border-t border-white/10 bg-brand-blue px-4 py-3 md:hidden">
+        <nav className={`border-t px-4 py-3 md:hidden transition-colors duration-300 ${
+          scrolled 
+            ? "border-gray-100 bg-white" 
+            : "border-white/10 bg-brand-blue"
+        }`}>
           <div className="flex flex-col gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-2.5 text-base font-medium text-white hover:bg-white/10"
+                className={`rounded-md px-3 py-2.5 text-base font-medium transition-colors duration-300 ${
+                  scrolled 
+                    ? "text-gray-700 hover:bg-gray-100" 
+                    : "text-white hover:bg-white/10"
+                }`}
               >
                 {link.label}
               </Link>
             ))}
-            <p className="mt-2 border-t border-white/10 px-3 pt-3 text-sm font-semibold text-brand-orange">
+            <p className={`mt-2 border-t px-3 pt-3 text-sm font-semibold text-brand-orange transition-colors duration-300 ${
+              scrolled ? "border-gray-100" : "border-white/10"
+            }`}>
               {siteConfig.phoneDisplay}
             </p>
           </div>
