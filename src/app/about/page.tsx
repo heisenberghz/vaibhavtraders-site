@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="bg-brand-blue py-12 text-white sm:py-16">
+      <section className="bg-brand-blue pt-24 pb-12 text-white sm:pt-32 sm:pb-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <h1 className="font-heading text-3xl font-bold sm:text-4xl">About Us</h1>
           <p className="mt-3 max-w-2xl text-lg text-blue-100">

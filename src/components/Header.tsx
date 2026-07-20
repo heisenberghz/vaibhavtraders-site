@@ -2,15 +2,36 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { navLinks, siteConfig } from "@/lib/data";
 
 export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    // Run once on load to verify current scroll position
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-blue-900/10 bg-brand-blue shadow-md">
+    <header className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ${
+      scrolled
+        ? "border-blue-900/10 bg-brand-blue/90 backdrop-blur-md shadow-md"
+        : "border-transparent bg-transparent shadow-none"
+    }`}>
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
         <Link href="/" className="group flex flex-col">
           <span className="font-heading text-lg font-bold tracking-tight text-white sm:text-xl">
