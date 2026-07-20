@@ -90,7 +90,7 @@ export default function Home() {
 
       {/* Why Choose Us */}
       <section
-        className="relative py-14 sm:py-20 bg-cover bg-center bg-fixed"
+        className="relative py-14 sm:py-20 bg-cover bg-center"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80')" }}
       >
         <div className="absolute inset-0 bg-brand-blue/80 mix-blend-multiply" />
@@ -154,7 +154,7 @@ export default function Home() {
 
       {/* Featured Products */}
       <section
-        className="relative py-14 sm:py-16 bg-cover bg-center bg-fixed"
+        className="relative py-14 sm:py-16 bg-cover bg-center"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&q=80')" }}
       >
         <div className="absolute inset-0 bg-brand-blue/80 mix-blend-multiply" />
@@ -205,7 +205,7 @@ export default function Home() {
 
       {/* Testimonials */}
       <section
-        className="relative py-14 sm:py-20 bg-cover bg-center bg-fixed"
+        className="relative py-14 sm:py-20 bg-cover bg-center"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&q=80')" }}
       >
         <div className="absolute inset-0 bg-brand-blue/80 mix-blend-multiply" />
