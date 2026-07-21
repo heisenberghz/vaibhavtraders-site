@@ -37,7 +37,7 @@ export default function Hero() {
               : "text-blue-100 hover:text-white"
           }`}
         >
-          Variant B (Split Photos)
+          Variant B (Split Showcase)
         </button>
       </div>
 
@@ -96,7 +96,7 @@ export default function Hero() {
           </div>
         </section>
       ) : (
-        /* VARIANT B: Split Layout with Full Featured Project Photo Frame (Sairam Style) */
+        /* VARIANT B: Split Layout with Full Featured Project Photo Frame */
         <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,#2345a5_0%,#142862_50%,#0a1430_100%)] text-white pt-28 pb-16 sm:pt-36 sm:pb-24">
           {/* Subtle Glow Orbs */}
           <div className="absolute inset-0 opacity-25">
