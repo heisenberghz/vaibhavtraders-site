@@ -16,7 +16,7 @@ const poppins = Poppins({
   weight: ["500", "600", "700"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://vaibhavtradersudupi.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://vaibhavtraders.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
