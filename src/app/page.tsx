@@ -91,7 +91,7 @@ export default function Home() {
       {/* Why Choose Us */}
       <section
         className="relative py-16 sm:py-24 bg-cover bg-center overflow-hidden"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80')" }}
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&q=80')" }}
       >
         <div className="absolute inset-0 bg-brand-blue/80 mix-blend-multiply z-0" />
         <div className="absolute inset-0 bg-brand-blue/40 z-0" />
