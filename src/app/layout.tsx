@@ -153,13 +153,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${poppins.variable} h-full`}>
-      <head>
+      <body className="flex min-h-full flex-col bg-white antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
         />
-      </head>
-      <body className="flex min-h-full flex-col bg-white antialiased">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
