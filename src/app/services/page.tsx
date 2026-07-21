@@ -3,8 +3,8 @@ import { services, siteConfig } from "@/lib/data";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services",
-  description: `Plywood supply, hardware, aluminium fabrication and interior solutions in Udupi — ${siteConfig.name}.`,
+  title: "Interior Decorators, Plywood & Hardware Services in Udupi",
+  description: `Turnkey interior decoration, custom modular kitchens, wardrobes, plywood & hardware supply, and aluminium fabrication in Udupi — ${siteConfig.name}.`,
 };
 
 export default function ServicesPage() {

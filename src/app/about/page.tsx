@@ -3,8 +3,8 @@ import { siteConfig, timeline } from "@/lib/data";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us",
-  description: `Learn about ${siteConfig.name} — over 23 years of trusted plywood and interior solutions in Udupi.`,
+  title: "About Us | Trusted Interior Decorators & Plywood Suppliers in Udupi",
+  description: `Learn about ${siteConfig.name} — over 23 years of trusted interior decoration, turnkey execution, plywood and hardware supply in Udupi.`,
 };
 
 export default function AboutPage() {

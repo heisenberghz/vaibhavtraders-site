@@ -4,8 +4,8 @@ import { projects, siteConfig } from "@/lib/data";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description: `View residential, commercial, office and interior projects supported by ${siteConfig.name} in Udupi.`,
+  title: "Interior Decorator Projects & Work Execution Portfolio in Udupi",
+  description: `Explore completed interior decoration, modular kitchen execution, custom wardrobes, and interior work portfolio by ${siteConfig.name} in Udupi & Mangalore.`,
 };
 
 export default function ProjectsPage() {

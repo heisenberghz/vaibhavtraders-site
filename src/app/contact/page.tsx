@@ -3,8 +3,8 @@ import { siteConfig } from "@/lib/data";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
-  description: `Contact ${siteConfig.name} in Udyavara, Udupi. Phone: ${siteConfig.phoneDisplay}. Plywood, hardware, and interior solutions.`,
+  title: "Contact Interior Decorators & Plywood Dealers in Udupi",
+  description: `Contact ${siteConfig.name} in Udyavara, Udupi. Phone: ${siteConfig.phoneDisplay}. Expert interior decorators, plywood, hardware, and custom turnkey execution.`,
 };
 
 export default function ContactPage() {

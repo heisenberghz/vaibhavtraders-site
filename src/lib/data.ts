@@ -6,7 +6,7 @@ export const siteConfig = {
   phone: "9342501605",
   phoneDisplay: "+91 93425 01605",
   address: {
-    line1: "1/2, Guddeyangadi",
+    line1: "Guddeyangadi",
     line2: "Udyavara, Udupi",
     state: "Karnataka 574118, India",
     full: "Vaibhav Traders, 1/2, Guddeyangadi, Udyavara, Udupi, Karnataka 574118, India",
