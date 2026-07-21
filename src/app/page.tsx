@@ -137,6 +137,7 @@ export default function Home() {
             {services.map((service) => (
               <ServiceCard
                 key={service.id}
+                icon={service.id}
                 title={service.title}
                 short={service.short}
                 href="/services"
